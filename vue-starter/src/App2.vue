@@ -20,7 +20,7 @@
 //   },
 // };
 //
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 const name = ref("John");
 const status = ref("active");
 const tasks = ref(["run", "jump", "sit", "hide"]);
@@ -43,6 +43,16 @@ const addTask = () => {
 const deleteTask = (index) => {
   tasks.value.splice(index, 1);
 };
+
+onMounted(async () => {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const data = await response.json();
+    tasks.value = data.map((task) => task.title);
+  } catch (error) {
+    console.log("Error in fetching data");
+  }
+});
 </script>
 <template>
   <h1>{{ name }}</h1>
