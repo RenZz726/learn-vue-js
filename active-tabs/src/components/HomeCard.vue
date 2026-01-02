@@ -12,7 +12,7 @@ import { RouterLink } from "vue-router";
             Browse our Vue jobs and start your career today
           </p>
           <RouterLink
-            to="/job"
+            to="/jobs"
             class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
           >
             Browse Jobs

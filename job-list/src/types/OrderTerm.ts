@@ -1,0 +1,1 @@
+export type OrderTerms = "title" | "location" | "salary";
