@@ -19,7 +19,7 @@
     <v-main>
       <router-view />
 
-      <Cards />
+      <ExpandTransition />
     </v-main>
 
     <!-- FOOTER -->
@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref } from "vue";
-import Cards from "./components/Cards.vue";
+import Cards from "./components/vCards/Cards.vue";
 
 const drawer = ref(false);
 </script>

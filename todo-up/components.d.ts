@@ -12,14 +12,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./src/components/AppFooter.vue')['default']
-    Cards: typeof import('./src/components/vCards/Cards.vue')['default']
-    Color: typeof import('./src/components/vCards/Color.vue')['default']
-    Discord: typeof import('./src/components/Discord.vue')['default']
-    ExpandTransition: typeof import('./src/components/vCards/ExpandTransition.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Verification: typeof import('./src/components/Verification.vue')['default']
   }
 }

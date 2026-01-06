@@ -1,5 +1,6 @@
 <template>
   <v-row>
+    
     <v-col cols="12" md="4">
       <v-card
         subtitle="This is a card subtitle"
@@ -15,6 +16,8 @@
         <template v-slot:title>
           This is a title
         </template>
+        <!-- This is a title -->
+        
 
         <template v-slot:subtitle>
           This is a card subtitle
@@ -25,7 +28,7 @@
         </template>
       </v-card>
 
-      <div class="text-center text-caption">Using Slots Only</div>
+      <div class="t-center text-caption">Using Slots Only</div>
     </v-col>
 
     <v-col cols="12" md="4">
@@ -43,5 +46,6 @@
 
       <div class="text-center text-caption">Using Markup Only</div>
     </v-col>
+
   </v-row>
 </template>
